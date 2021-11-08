@@ -1,0 +1,53 @@
+@keyframes load{
+    0%{
+        color:$loadercolor;
+        text-shadow: 0 0 7px $loadercolor;
+    }
+    80%{
+        color: $primarycolor;
+        text-shadow: 0 0 7px $primarycolor;
+    }
+    100%{
+        color:$loadercolor;
+        text-shadow: 0 0 7px $loadercolor;
+    }
+}
+@keyframes fondu-out{
+    100%{
+        opacity:0;
+        z-index:-1;
+    }
+}
+@keyframes fondu-in{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes slide{
+	0%{
+        left: -200%;  
+    }
+	90%{
+        left:1%; 
+    }
+	100%{
+        left:0%;
+    }
+}
+@keyframes check{
+    0%{
+        flex:0;
+        background-color:white ;
+    }
+    70%{
+        flex:1.5;
+        background-color:$tertiarycolor;
+    }
+    100%{
+        flex:1;
+        background-color:$tertiarycolor ;
+    }
+}

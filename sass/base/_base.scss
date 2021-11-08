@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+    cursor:pointer;
+    opacity:.9;
+    &:hover{
+        opacity:1;
+    }
+}
+
+button{
+    background:0;
+    border-style: none;
+    cursor: pointer;
+    opacity:.9;
+    &:hover{
+        opacity:1;
+    }
+}
+
+ul, nav
+{
+	list-style-type: none;
+}

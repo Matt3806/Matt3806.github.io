@@ -1,0 +1,30 @@
+@mixin heartfill {
+    font-weight: 900;
+    background: -webkit-linear-gradient($secondarycolor, $primarycolor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin appear($time: 2s) {
+    opacity:0;
+    animation: fondu-in 0.2s ease-out;
+    animation-delay: $time;
+    animation-fill-mode: both;
+}
+@mixin slidein($time2:1.6s){
+    position:relative;
+    left:-300%;
+    animation:slide 1s forwards;
+    animation-delay: $time2;
+}
+
+@mixin lightme {
+    background: linear-gradient(
+        356deg,
+        lighten($primarycolor,5%) 0%,
+        lighten($primarycolor,5%) 33%,
+        lighten($secondarycolor,5%) 88%,
+        lighten($secondarycolor,5%) 100%,
+    );
+    box-shadow: #4b4b4b 0 5px 10px;
+    transition: .5s ease-in-out;
+}
